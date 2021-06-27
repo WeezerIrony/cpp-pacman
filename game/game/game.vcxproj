@@ -116,6 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)game;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -158,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ApplicationBuilder.cpp" />
+    <ClCompile Include="Core\Application.cpp" />
     <ClCompile Include="Core\ApplicationBuilder.cpp" />
     <ClCompile Include="Graphics\Bullet.cpp" />
     <ClCompile Include="Graphics\Server.cpp" />

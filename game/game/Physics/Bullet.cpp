@@ -33,9 +33,11 @@ namespace Physics
 
 	void Bullet::ProcessSplinter(float dt)
 	{
+		SplintersOnGround = true;
 		for (Splinter& splinter : splinters)
 		{
 			splinter.Simulate(dt);
+			SplintersOnGround &= splinter.SplinterOnGround();
 		}
 	}
 

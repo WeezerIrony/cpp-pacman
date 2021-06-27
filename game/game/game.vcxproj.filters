@@ -106,5 +106,8 @@
     <ClCompile Include="Graphics\Server.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Application.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

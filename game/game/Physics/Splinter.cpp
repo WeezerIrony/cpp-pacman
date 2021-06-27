@@ -11,8 +11,11 @@ namespace Physics
 {
 	void Splinter::Simulate(float dt)
 	{
-		splinterY += splinterVY * dt;
-		splinterVY -= (g*dt);
-		splinterX += splinterVX * dt;
+		if (!SplinterOnGround())
+		{
+			splinterY += splinterVY * dt;
+			splinterVY -= (g * dt);
+			splinterX += splinterVX * dt;
+		}
 	}
 }

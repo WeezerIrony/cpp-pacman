@@ -9,6 +9,10 @@ namespace Physics
         {
         }
         void Simulate(float dt);
+        bool SplinterOnGround() const
+        { 
+            return splinterY <= 0;
+        }
     private:
         float splinterX;
         float splinterY;
