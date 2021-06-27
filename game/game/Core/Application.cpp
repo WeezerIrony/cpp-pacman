@@ -11,6 +11,7 @@ Application::Application(Input* input, Audio* audio, Logic* logic, AiModule* ai,
 
 bool Application::Activate()
 {
+    return true;
 }
 
 void Application::Run()

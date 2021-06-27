@@ -158,7 +158,6 @@
     <ClInclude Include="Physics\Splinter.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ApplicationBuilder.cpp" />
     <ClCompile Include="Core\Application.cpp" />
     <ClCompile Include="Core\ApplicationBuilder.cpp" />
     <ClCompile Include="Graphics\Bullet.cpp" />
@@ -168,6 +167,7 @@
     <ClCompile Include="Physics\Bullet.cpp" />
     <ClCompile Include="Physics\Server.cpp" />
     <ClCompile Include="Physics\Splinter.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

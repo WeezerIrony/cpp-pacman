@@ -7,30 +7,33 @@ ApplicationBuilder ApplicationBuilder::Create()
 
 Application ApplicationBuilder::Get()
 {
-
+    return Application(in, aud, lg, am, gfx);
 }
 
 ApplicationBuilder& ApplicationBuilder::AddInput(Input* input)
 {
     in = input;
+    return *this;
 }
 
 ApplicationBuilder& ApplicationBuilder::AddAi(AiModule* ai)
 {
-    // TODO: insert return statement here
+    am = ai;
+    return *this;
 }
 
 ApplicationBuilder& ApplicationBuilder::AddGraphics(Graphics* graphics)
 {
-    // TODO: insert return statement here
+    gfx = graphics;
+    return *this;
 }
 
 ApplicationBuilder& ApplicationBuilder::AddLogic(Logic* logic)
 {
-    // TODO: insert return statement here
+    lg = logic;
+    return *this;
 }
 
 ApplicationBuilder::ApplicationBuilder()
 {
-
 }

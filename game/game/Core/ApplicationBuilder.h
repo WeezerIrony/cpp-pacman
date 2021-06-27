@@ -13,10 +13,10 @@ public:
     ApplicationBuilder& AddLogic(Logic* logics);
 private:
     ApplicationBuilder();
-    Input* in;
-    Audio* aud;
-    Logic* lg;
-    AiModule* am;
-    Graphics* gfx;
+    Input* in{ nullptr };
+    Audio* aud{ nullptr };
+    Logic* lg{ nullptr };
+    AiModule* am{ nullptr };
+    Graphics* gfx{ nullptr };
 };
 

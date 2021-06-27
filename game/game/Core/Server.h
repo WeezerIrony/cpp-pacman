@@ -24,7 +24,7 @@ namespace Core
         void unregisterEntity(Entity* entity)
         {
             auto&& it = std::find(entities.begin(), entities.end(), entity);
-            if it != entities.end() 
+            if (it != entities.end() )
             {
                 entities.erase(it);
             }

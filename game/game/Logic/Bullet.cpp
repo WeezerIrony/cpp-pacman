@@ -13,8 +13,8 @@ namespace Logic
 
 	Bullet::~Bullet()
 	{
-		delete pbullet;
-		delete gbullet;
+		//delete pbullet;
+		//delete gbullet;
 	}
 
 	void Bullet::onFrame(float dt)

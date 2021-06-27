@@ -79,9 +79,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ApplicationBuilder.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Core\ApplicationBuilder.cpp">
       <Filter>Core</Filter>
     </ClCompile>
@@ -108,6 +105,9 @@
     </ClCompile>
     <ClCompile Include="Core\Application.cpp">
       <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
