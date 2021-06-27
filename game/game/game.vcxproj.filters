@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{e6a43008-92f1-4526-b24f-1c4c10a2fa2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{26ac61d5-6845-4740-b58d-10132202581e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{07caf1b7-8632-4e1d-8c3a-87f6201cbe12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{92b815c3-8ef5-4e08-a657-61f0345a8afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{16c40b1a-39e6-4184-8253-390c312d340f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{924e00d9-b275-424b-90b6-7ed5c7b79702}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graphics\Server.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\SfmlGraphics.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Input.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\SfmlInput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\Audio.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\GameAudio.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\GameLogic.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Server.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\Server.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Application.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ApplicationBuilder.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Server.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\Bullet.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\Splinter.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Bullet.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Bullet.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ApplicationBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ApplicationBuilder.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\Server.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\Bullet.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\Splinter.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Bullet.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Server.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Bullet.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Server.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
