@@ -1,6 +1,7 @@
 #include "Bullet.h"
 #include "Server.h"
 #include <conio.h>
+#include <SFML/Graphics.hpp>
 #include <cassert>
 
 namespace Graphics

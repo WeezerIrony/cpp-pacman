@@ -47,10 +47,10 @@ namespace Physics
 		std::mt19937 gen(rd());
 		for (int i{ 0 }; i < SplintersCount; i++)
 		{
-			std::uniform_int_distribution<> distr(-bulletVY, bulletVY);
-			auto spVX = distr(gen);
-			std::uniform_int_distribution<> distr(-sqrt(pow(bulletVY, 2) - pow(spVX, 2)), sqrt(pow(bulletVY, 2) - pow(spVX, 2)));
-			auto spVY = distr(gen);
+			std::uniform_int_distribution<> distr1(-bulletVY, bulletVY);
+			auto spVX = distr1(gen);
+			std::uniform_int_distribution<> distr2(-sqrt(pow(bulletVY, 2) - pow(spVX, 2)), sqrt(pow(bulletVY, 2) - pow(spVX, 2)));
+			auto spVY = distr2(gen);
 			splinters.emplace_back(bulletX, bulletY, spVX, spVY);
 		}
 		isExploded = true;
