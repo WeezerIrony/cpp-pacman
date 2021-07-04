@@ -1,0 +1,51 @@
+﻿  Application.cpp
+  ApplicationBuilder.cpp
+  GraphicsBullet.cpp
+C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Graphics\GraphicsBullet.cpp(23,24): warning C4018: '>': signed/unsigned mismatch
+  GraphicsServer.cpp
+  LogicBullet.cpp
+  LogicServer.cpp
+  PhysicsBullet.cpp
+C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Physics\PhysicsBullet.cpp(50,54): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Physics\PhysicsBullet.cpp(50,43): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Physics\PhysicsBullet.cpp(52,87): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Physics\PhysicsBullet.cpp(52,43): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xmemory(696,103): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\vector(689): message : see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,float&,float&,int&,int&>(_Alloc &,_Objty *const ,float &,float &,int &,int &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<Physics::Splinter>,
+              _Ty=Physics::Splinter,
+              _Objty=Physics::Splinter
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\vector(694): message : see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,float&,float&,int&,int&>(_Alloc &,_Objty *const ,float &,float &,int &,int &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<Physics::Splinter>,
+              _Ty=Physics::Splinter,
+              _Objty=Physics::Splinter
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\vector(707): message : see reference to function template instantiation 'void std::vector<Physics::Splinter,std::allocator<Physics::Splinter>>::_Emplace_back_with_unused_capacity<float&,float&,int&,int&>(float &,float &,int &,int &)' being compiled
+C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Physics\PhysicsBullet.cpp(54): message : see reference to function template instantiation 'void std::vector<Physics::Splinter,std::allocator<Physics::Splinter>>::emplace_back<float&,float&,int&,int&>(float &,float &,int &,int &)' being compiled
+  PhysicsServer.cpp
+  Splinter.cpp
+  Source.cpp
+  Generating Code...
+Splinter.obj : error LNK2005: "public: void __thiscall Physics::Splinter::Simulate(float)" (?Simulate@Splinter@Physics@@QAEXM@Z) already defined in PhysicsBullet.obj
+C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\Debug\game.exe : fatal error LNK1169: one or more multiply defined symbols found
