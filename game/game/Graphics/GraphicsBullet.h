@@ -1,9 +1,17 @@
 #pragma once
 #include "GraphicsServer.h"
+#include <memory>
+#include <vector>
+
+namespace sf
+{
+	class Texture;
+	class Sprite;
+}
 
 namespace Graphics
 {
-	class Bullet : public Entity 
+	class Bullet final : public Entity
 	{
 	public:
 		Bullet(graphServer& Server);
@@ -17,12 +25,14 @@ namespace Graphics
 		void setRocketPosition(float x, float y);
 
 	private:
-		bool isRocket{true};
+		sf::Texture& m_texture;
+		std::unique_ptr<sf::Sprite> m_shape;
+		bool isRocket{false};
 		struct Position final
 		{
 			Position(float newX, float newY) : x(newX), y(newY) {}
-			float x{ 0 };
-			float y{ 0 };
+			float x;
+			float y;
 		};
 		float rX{ 0 };
 		float rY{ 0 };
