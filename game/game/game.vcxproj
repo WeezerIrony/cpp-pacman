@@ -155,28 +155,28 @@
     <ClInclude Include="Audio\GameAudio.h" />
     <ClInclude Include="Core\Application.h" />
     <ClInclude Include="Core\ApplicationBuilder.h" />
-    <ClInclude Include="Core\Server.h" />
-    <ClInclude Include="Graphics\Bullet.h" />
-    <ClInclude Include="Graphics\Server.h" />
+    <ClInclude Include="Core\MainServer.h" />
+    <ClInclude Include="Graphics\GraphicsBullet.h" />
+    <ClInclude Include="Graphics\GraphicsServer.h" />
     <ClInclude Include="Graphics\SfmlGraphics.h" />
     <ClInclude Include="Input\Input.h" />
     <ClInclude Include="Input\SfmlInput.h" />
-    <ClInclude Include="Logic\Bullet.h" />
+    <ClInclude Include="Logic\LogicBullet.h" />
     <ClInclude Include="Logic\GameLogic.h" />
-    <ClInclude Include="Logic\Server.h" />
-    <ClInclude Include="Physics\Bullet.h" />
-    <ClInclude Include="Physics\Server.h" />
+    <ClInclude Include="Logic\LogicServer.h" />
+    <ClInclude Include="Physics\PhysicsBullet.h" />
+    <ClInclude Include="Physics\PhysicsServer.h" />
     <ClInclude Include="Physics\Splinter.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\Application.cpp" />
     <ClCompile Include="Core\ApplicationBuilder.cpp" />
-    <ClCompile Include="Graphics\Bullet.cpp" />
-    <ClCompile Include="Graphics\Server.cpp" />
-    <ClCompile Include="Logic\Bullet.cpp" />
-    <ClCompile Include="Logic\Server.cpp" />
-    <ClCompile Include="Physics\Bullet.cpp" />
-    <ClCompile Include="Physics\Server.cpp" />
+    <ClCompile Include="Graphics\GraphicsBullet.cpp" />
+    <ClCompile Include="Graphics\GraphicsServer.cpp" />
+    <ClCompile Include="Logic\LogicBullet.cpp" />
+    <ClCompile Include="Logic\LogicServer.cpp" />
+    <ClCompile Include="Physics\PhysicsBullet.cpp" />
+    <ClCompile Include="Physics\PhysicsServer.cpp" />
     <ClCompile Include="Physics\Splinter.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>

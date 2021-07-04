@@ -1,4 +1,4 @@
-#include "server.h"
+#include "PhysicsServer.h"
 #include "Splinter.h"
 
 namespace

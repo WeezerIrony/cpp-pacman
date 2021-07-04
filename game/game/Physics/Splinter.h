@@ -1,5 +1,4 @@
 #pragma once
-#include "../core/server.h"
 
 namespace Physics
 {
@@ -13,12 +12,15 @@ namespace Physics
         { 
             return splinterY <= 0;
         }
+        std::pair<float, float> GetCoords() const
+        {
+            return { splinterX, splinterY };
+        }
     private:
         float splinterX;
         float splinterY;
         float splinterVX;
         float splinterVY;
-        friend class Bullet;
     };
 }
 

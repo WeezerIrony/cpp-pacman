@@ -29,7 +29,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Graphics\Server.h">
+    <ClInclude Include="Graphics\GraphicsServer.h">
       <Filter>Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\SfmlGraphics.h">
@@ -50,10 +50,10 @@
     <ClInclude Include="Logic\GameLogic.h">
       <Filter>Logic</Filter>
     </ClInclude>
-    <ClInclude Include="Logic\Server.h">
+    <ClInclude Include="Logic\LogicServer.h">
       <Filter>Logic</Filter>
     </ClInclude>
-    <ClInclude Include="Physics\Server.h">
+    <ClInclude Include="Physics\PhysicsServer.h">
       <Filter>Physics</Filter>
     </ClInclude>
     <ClInclude Include="Core\Application.h">
@@ -62,19 +62,19 @@
     <ClInclude Include="Core\ApplicationBuilder.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Core\Server.h">
+    <ClInclude Include="Core\MainServer.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Physics\Bullet.h">
+    <ClInclude Include="Physics\PhysicsBullet.h">
       <Filter>Physics</Filter>
     </ClInclude>
     <ClInclude Include="Physics\Splinter.h">
       <Filter>Physics</Filter>
     </ClInclude>
-    <ClInclude Include="Logic\Bullet.h">
+    <ClInclude Include="Logic\LogicBullet.h">
       <Filter>Logic</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics\Bullet.h">
+    <ClInclude Include="Graphics\GraphicsBullet.h">
       <Filter>Graphics</Filter>
     </ClInclude>
   </ItemGroup>
@@ -82,25 +82,25 @@
     <ClCompile Include="Core\ApplicationBuilder.cpp">
       <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="Physics\Server.cpp">
+    <ClCompile Include="Physics\PhysicsServer.cpp">
       <Filter>Physics</Filter>
     </ClCompile>
-    <ClCompile Include="Physics\Bullet.cpp">
+    <ClCompile Include="Physics\PhysicsBullet.cpp">
       <Filter>Physics</Filter>
     </ClCompile>
     <ClCompile Include="Physics\Splinter.cpp">
       <Filter>Physics</Filter>
     </ClCompile>
-    <ClCompile Include="Logic\Bullet.cpp">
+    <ClCompile Include="Logic\LogicBullet.cpp">
       <Filter>Logic</Filter>
     </ClCompile>
-    <ClCompile Include="Logic\Server.cpp">
+    <ClCompile Include="Logic\LogicServer.cpp">
       <Filter>Logic</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics\Bullet.cpp">
+    <ClCompile Include="Graphics\GraphicsBullet.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics\Server.cpp">
+    <ClCompile Include="Graphics\GraphicsServer.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
     <ClCompile Include="Core\Application.cpp">

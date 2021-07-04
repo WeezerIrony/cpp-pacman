@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Server.h"
+#include "GraphicsServer.h"
 
 class SfmlGraphics: public Graphics
 {
