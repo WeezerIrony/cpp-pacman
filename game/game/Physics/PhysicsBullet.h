@@ -8,11 +8,11 @@ namespace Physics
     class Bullet : public Entity
     {
     public:
-        Bullet(physServer& Server) : Entity(Server)
+        Bullet(physServer& Server, float bX, float bY) : Entity(Server), bulletX(bX), bulletY(bY)
         {
         }
         ~Bullet();
-        virtual void onFrame(float dt) override;
+        virtual void OnFrame(float dt) override;
         bool IsOnGround() const
         {
             return SplintersOnGround;

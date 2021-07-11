@@ -16,7 +16,7 @@ namespace Graphics
 	public:
 		Bullet(graphServer& Server);
 		~Bullet();
-		virtual void onFrame(float dt) override;
+		virtual void OnFrame(float dt) override;
 		void setRenderType(bool renderType)
 		{
 			isRocket = renderType;

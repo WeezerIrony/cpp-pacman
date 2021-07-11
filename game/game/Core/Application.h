@@ -1,25 +1,25 @@
 #pragma once
+#include "Physics/PhysicsServer.h"
+#include "Graphics/GraphicsServer.h"
+#include "Logic/LogicServer.h"
 
-class Audio;
-class Logic;
-class Input;
-class AiModule;
-class Graphics;
+
 
 class Application final
 {
 public:
+    explicit Application(Physics::physServer* P, Logic::logServer* L, Graphics::graphServer* G) : PhysServer(P), LogServer(L), GraphServer(G) {};
+    ~Application();
+
     bool Activate();
-    void Run();
+    void Run() const;
     void Deactivate();
 
 private:
-    Application(Input* input, Audio* audio, Logic* logic, AiModule* ai, Graphics* graphics);
-    Input* m_input;
-    Audio* m_audio;
-    Logic* m_logic;
-    AiModule* m_ai;
-    Graphics* m_graphics;
+    void HandleEvents() const;
+    Physics::physServer* PhysServer{ nullptr };
+    Logic::logServer* LogServer{ nullptr };
+    Graphics::graphServer* GraphServer{ nullptr };
 
 friend class ApplicationBuilder;
 };

@@ -15,7 +15,7 @@ namespace Physics
 	{
 	}
 
-	void Bullet::onFrame(float dt)
+	void Bullet::OnFrame(float dt)
 	{
 		if (isExploded)
 			ProcessSplinter(dt);

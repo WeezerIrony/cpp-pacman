@@ -11,7 +11,6 @@ namespace Input
     public:
         IServer() = default;
         virtual ~IServer() = default;
-        virtual void OnFrame() = 0;
-        virtual bool isPressed(Button button) = 0;
+        virtual bool IsPressed(Button b) const = 0;
     };
 }

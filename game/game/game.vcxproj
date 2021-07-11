@@ -158,11 +158,9 @@
     <ClInclude Include="Core\MainServer.h" />
     <ClInclude Include="Graphics\GraphicsBullet.h" />
     <ClInclude Include="Graphics\GraphicsServer.h" />
-    <ClInclude Include="Graphics\SfmlGraphics.h" />
     <ClInclude Include="Input\IServer.h" />
     <ClInclude Include="Input\SfmlInput.h" />
     <ClInclude Include="Logic\LogicBullet.h" />
-    <ClInclude Include="Logic\GameLogic.h" />
     <ClInclude Include="Logic\LogicServer.h" />
     <ClInclude Include="Physics\PhysicsBullet.h" />
     <ClInclude Include="Physics\PhysicsServer.h" />

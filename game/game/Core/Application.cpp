@@ -1,30 +1,57 @@
 #include "Application.h"
+#include "Physics/PhysicsBullet.h"
+#include "Logic/LogicBullet.h"
+#include "Graphics/GraphicsBullet.h"
+#include <chrono>
 
-Application::Application(Input* input, Audio* audio, Logic* logic, AiModule* ai, Graphics* graphics)
-    : m_input(input)
-    , m_audio(audio)
-    , m_logic(logic)
-    , m_ai(ai)
-    , m_graphics(graphics)
+namespace
 {
+    constexpr std::size_t FrameTime{ 16 }; // msec
+}
+
+Application::~Application()
+{
+
 }
 
 bool Application::Activate()
 {
+    GraphServer->Open();
     return true;
 }
 
-void Application::Run()
+void Application::Run() const
 {
-    //m_input->OnFrame(); // handle user input, related info will be stored in the inner map
-    //m_logic->OnFrame(); // update user actions, interactions with vworld
-    //m_ai->OnFrame(); // simulate npc, traffic, e.t.c
-    //m_logic->OnRender(); // set graphysics properties 
-    //m_ai->OnRender(); // set graphysics properties 
-    //m_graphics->Render();
-    //m_audio->OnFrame(); // evidently
+    for (;;)
+    {
+        auto&& start = std::chrono::high_resolution_clock::now();
+
+        HandleEvents();
+        constexpr float FrameTimeSec{ float(FrameTime) / 1000 };
+        PhysServer->onFrameImpl(FrameTimeSec);
+        LogServer->onFrameImpl(FrameTimeSec);
+
+        GraphServer->BeforeRender();
+
+        GraphServer->onFrame(FrameTimeSec);
+
+        auto&& end = std::chrono::high_resolution_clock::now();
+        auto&& deltaTime = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+        GraphServer->Render(FrameTime - deltaTime);
+    }
+
+    GraphServer->Close();
 }
 
 void Application::Deactivate()
 {
+}
+
+void Application::HandleEvents() const
+{
+    auto y = 100;
+    auto x = (double)rand() / RAND_MAX * 900;
+    Physics::Bullet* PBullet = new Physics::Bullet(*PhysServer, x, y);
+    Graphics::Bullet* GBullet = new Graphics::Bullet(*GraphServer);
+    auto LBullet = Logic::Bullet(*LogServer, PBullet, GBullet);
 }

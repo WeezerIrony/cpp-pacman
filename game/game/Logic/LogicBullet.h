@@ -20,7 +20,7 @@ namespace Logic
         Bullet(logServer& Server, Physics::Bullet* pb, Graphics::Bullet* gb); 
         ~Bullet();
         void updateGraphics();
-        virtual void onFrame(float dt) override;
+        virtual void OnFrame(float dt) override;
     private:
         Physics::Bullet* pbullet;
         Graphics::Bullet* gbullet;

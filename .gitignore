@@ -2,3 +2,5 @@
 /game/game/x64
 /game/.vs
 /game/Debug
+/game/game/Logic/GameLogic.h
+/game/game/Graphics/SfmlGraphics.h

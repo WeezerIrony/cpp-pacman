@@ -44,7 +44,7 @@ namespace Graphics
 
     void graphServer::CreateContext()
     {
-        m_window = std::make_unique<sf::RenderWindow>(sf::VideoMode(Width, Height), "FireWorks",
+        m_window = std::make_unique<sf::RenderWindow>(sf::VideoMode(Width, Height), "game",
             sf::Style::Titlebar | sf::Style::Close);
 
         m_window->setVerticalSyncEnabled(true);

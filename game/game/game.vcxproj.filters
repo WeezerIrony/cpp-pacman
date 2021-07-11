@@ -32,9 +32,6 @@
     <ClInclude Include="Graphics\GraphicsServer.h">
       <Filter>Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics\SfmlGraphics.h">
-      <Filter>Graphics</Filter>
-    </ClInclude>
     <ClInclude Include="Input\IServer.h">
       <Filter>Input</Filter>
     </ClInclude>
@@ -46,9 +43,6 @@
     </ClInclude>
     <ClInclude Include="Audio\GameAudio.h">
       <Filter>Audio</Filter>
-    </ClInclude>
-    <ClInclude Include="Logic\GameLogic.h">
-      <Filter>Logic</Filter>
     </ClInclude>
     <ClInclude Include="Logic\LogicServer.h">
       <Filter>Logic</Filter>

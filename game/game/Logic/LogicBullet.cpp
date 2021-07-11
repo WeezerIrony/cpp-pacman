@@ -34,7 +34,7 @@ namespace Logic
 		}
 	}
 
-	void Bullet::onFrame(float dt)
+	void Bullet::OnFrame(float dt)
 	{
 		if (pbullet->IsOnGround())
 		{

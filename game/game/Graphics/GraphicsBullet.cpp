@@ -18,7 +18,7 @@ namespace Graphics
 	{
 	}
 
-	void Bullet::onFrame(float dt)
+	void Bullet::OnFrame(float dt)
 	{
 		if (isRocket)
 		{

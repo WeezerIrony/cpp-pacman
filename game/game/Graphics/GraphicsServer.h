@@ -20,7 +20,7 @@ namespace Graphics
     public:
         Entity(graphServer& Server);
         ~Entity();
-        virtual void onFrame(float dt) = 0;
+        virtual void OnFrame(float dt) = 0;
     protected: 
         graphServer& m_server;
     };
@@ -36,7 +36,7 @@ namespace Graphics
         void Open();
         void Close();
 
-        bool IsPressed(Input::Button b) const;
+        virtual bool IsPressed(Input::Button b) const override;
 
         sf::RenderWindow& RenderWindow() const { return *m_window; }
         sf::Texture& BulletTexture() const { return *m_bulletTexture; }
