@@ -159,7 +159,7 @@
     <ClInclude Include="Graphics\GraphicsBullet.h" />
     <ClInclude Include="Graphics\GraphicsServer.h" />
     <ClInclude Include="Graphics\SfmlGraphics.h" />
-    <ClInclude Include="Input\Input.h" />
+    <ClInclude Include="Input\IServer.h" />
     <ClInclude Include="Input\SfmlInput.h" />
     <ClInclude Include="Logic\LogicBullet.h" />
     <ClInclude Include="Logic\GameLogic.h" />

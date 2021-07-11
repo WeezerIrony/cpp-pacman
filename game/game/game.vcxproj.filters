@@ -35,7 +35,7 @@
     <ClInclude Include="Graphics\SfmlGraphics.h">
       <Filter>Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Input\Input.h">
+    <ClInclude Include="Input\IServer.h">
       <Filter>Input</Filter>
     </ClInclude>
     <ClInclude Include="Input\SfmlInput.h">
