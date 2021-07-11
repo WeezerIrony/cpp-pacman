@@ -6,7 +6,6 @@ namespace
 	const float g{ 10 };
 }
 
-
 namespace Physics 
 {
 	void Splinter::Simulate(float dt)

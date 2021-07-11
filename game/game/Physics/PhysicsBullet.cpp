@@ -1,10 +1,10 @@
 #include "PhysicsBullet.h"
 #include "PhysicsServer.h"
 #include <random>
-#include "Splinter.cpp"
 
 namespace
 {
+	const float g{ 10 };
 	const float ExplosionHeight{ 100 };
 	const unsigned int SplintersCount{ 100 };
 }

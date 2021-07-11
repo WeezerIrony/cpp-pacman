@@ -29,7 +29,7 @@ namespace Graphics
     {
     public:
         graphServer();
-        virtual ~graphServer() = default;
+        virtual ~graphServer();
 
         void BeforeRender();
         void Render(std::size_t activeTime);
