@@ -5,7 +5,7 @@
 namespace
 {
 	const float g{ 10 };
-	const float ExplosionHeight{ 100 };
+	const float ExplosionHeight{ 600 };
 	const unsigned int SplintersCount{ 100 };
 }
 

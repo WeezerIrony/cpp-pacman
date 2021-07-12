@@ -8,7 +8,7 @@ namespace Physics
     class Bullet : public Entity
     {
     public:
-        Bullet(physServer& Server, float bX, float bY) : Entity(Server), bulletX(bX), bulletY(bY)
+        Bullet(physServer& Server, float bX, float bY, float bVY) : Entity(Server), bulletX(bX), bulletY(bY), bulletVY(bVY)
         {
         }
         ~Bullet();

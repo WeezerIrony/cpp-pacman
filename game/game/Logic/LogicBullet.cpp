@@ -19,6 +19,7 @@ namespace Logic
 
 	void Bullet::updateGraphics()
 	{
+		gbullet->setRenderType(!pbullet->GetExplode());
 		if (!pbullet->GetExplode())
 		{
 			gbullet->setRocketPosition(pbullet->GetCoords().first, pbullet->GetCoords().second);

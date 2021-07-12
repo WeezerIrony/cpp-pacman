@@ -51,7 +51,8 @@ void Application::HandleEvents() const
 {
     auto y = 100;
     auto x = (double)rand() / RAND_MAX * 900;
-    Physics::Bullet* PBullet = new Physics::Bullet(*PhysServer, x, y);
+    auto v = 300;
+    Physics::Bullet* PBullet = new Physics::Bullet(*PhysServer, x, y, v);
     Graphics::Bullet* GBullet = new Graphics::Bullet(*GraphServer);
     auto LBullet = Logic::Bullet(*LogServer, PBullet, GBullet);
 }

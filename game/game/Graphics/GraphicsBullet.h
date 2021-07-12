@@ -27,7 +27,7 @@ namespace Graphics
 	private:
 		sf::Texture& m_texture;
 		std::unique_ptr<sf::Sprite> m_shape;
-		bool isRocket{false};
+		bool isRocket{true};
 		struct Position final
 		{
 			Position(float newX, float newY) : x(newX), y(newY) {}
