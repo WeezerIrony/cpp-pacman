@@ -30,6 +30,7 @@ void Application::Run() const
         LogServer->onFrame(FrameTimeSec);
 
         GraphServer->BeforeRender();
+        InpServer->OnBeforeFrame();
 
         GraphServer->onFrame(FrameTimeSec);
 
@@ -51,9 +52,9 @@ void Application::Deactivate()
 
 void Application::HandleEvents() const
 {
-    if (GraphServer->IsPressed(Input::Button::P_C))
+    if (InpServer->IsPressed(Input::Button::P_C))
     {
-        CreateBullet creation(PhysServer, LogServer, GraphServer);
+        CreateBullet creation(PhysServer, LogServer, GraphServer, InpServer);
         creation.Execute();
     }
 }

@@ -16,9 +16,9 @@ namespace Graphics
         m_server.unregisterEntity(this);
     }
 
-    graphServer::graphServer()
+    graphServer::graphServer(Input::IServer* input)
     {
-        m_buttons.fill(false);
+        m_input = input;
     }
 
     graphServer::~graphServer()
@@ -37,11 +37,6 @@ namespace Graphics
         m_window->close();
     }
 
-    bool graphServer::IsPressed(Input::Button b) const
-    {
-        return m_buttons[unsigned(b)];
-    }
-
     void graphServer::CreateContext()
     {
         m_window = std::make_unique<sf::RenderWindow>(sf::VideoMode(Width, Height), "game",
@@ -55,15 +50,10 @@ namespace Graphics
         m_bulletTexture->loadFromFile("../Resources/bullet.png");
     }
 
-    /*void graphServer::UpdateButtons()
-    {
-         m_buttons[unsigned(Input::Button::P_C)] = sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
-    }*/
 
     void graphServer::BeforeRender()
     {
         m_window->clear(sf::Color(255, 255, 255));
-        m_buttons.fill(false);
     }
 
     void graphServer::Render(std::size_t activeTime)
@@ -79,10 +69,7 @@ namespace Graphics
             {
                 if (event.type == sf::Event::EventType::KeyPressed)
                 {
-                    if (event.key.code == sf::Keyboard::C)
-                    {
-                        m_buttons[unsigned(Input::Button::P_C)] = true;
-                    }
+                    m_input->UpdateButtons();
                 }
             }
 

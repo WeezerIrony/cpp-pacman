@@ -38,9 +38,6 @@
     <ClInclude Include="Input\IServer.h">
       <Filter>Input</Filter>
     </ClInclude>
-    <ClInclude Include="Input\SfmlInput.h">
-      <Filter>Input</Filter>
-    </ClInclude>
     <ClInclude Include="Audio\Audio.h">
       <Filter>Audio</Filter>
     </ClInclude>
@@ -80,6 +77,9 @@
     <ClInclude Include="Core\Commands\CreateBullet.h">
       <Filter>Core\Commands</Filter>
     </ClInclude>
+    <ClInclude Include="Input\InputServer.h">
+      <Filter>Input</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\ApplicationBuilder.cpp">
@@ -114,6 +114,9 @@
     </ClCompile>
     <ClCompile Include="Core\Commands\CreateBullet.cpp">
       <Filter>Core\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\InputServer.cpp">
+      <Filter>Input</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
