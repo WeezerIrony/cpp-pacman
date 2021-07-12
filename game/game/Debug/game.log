@@ -1,10 +1,10 @@
 ﻿  Application.cpp
-C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Core\Application.cpp(40,39): warning C4244: 'argument': conversion from '_Rep' to 'size_t', possible loss of data
+C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Core\Application.cpp(43,43): warning C4244: 'argument': conversion from '_Rep' to 'size_t', possible loss of data
           with
           [
               _Rep=__int64
           ]
-C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Core\Application.cpp(55,71): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Core\Application.cpp(55,68): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Core\Application.cpp(55,65): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Core\Application.cpp(61,75): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Core\Application.cpp(61,72): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\game\Core\Application.cpp(61,69): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   game.vcxproj -> C:\Users\Billy Scranner\Documents\dev\cpp\game2\game\Debug\game.exe

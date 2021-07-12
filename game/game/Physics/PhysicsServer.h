@@ -9,7 +9,7 @@ namespace Physics
     {
     public:
         Entity(physServer& Server);
-        ~Entity();
+        virtual ~Entity();
         virtual void OnFrame(float dt) = 0;
     private: physServer& m_server;
     };

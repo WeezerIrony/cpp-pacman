@@ -28,16 +28,20 @@ void Application::Run() const
 
         HandleEvents();
         constexpr float FrameTimeSec{ float(FrameTime) / 1000 };
-        PhysServer->onFrameImpl(FrameTimeSec);
-        LogServer->onFrameImpl(FrameTimeSec);
+        PhysServer->onFrame(FrameTimeSec);
+        LogServer->onFrame(FrameTimeSec);
 
         GraphServer->BeforeRender();
 
         GraphServer->onFrame(FrameTimeSec);
 
+
         auto&& end = std::chrono::high_resolution_clock::now();
         auto&& deltaTime = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
-        GraphServer->Render(FrameTime - deltaTime);
+        if (FrameTime > deltaTime)
+        {
+            GraphServer->Render(FrameTime - deltaTime);
+        }
     }
 
     GraphServer->Close();
@@ -49,10 +53,13 @@ void Application::Deactivate()
 
 void Application::HandleEvents() const
 {
-    auto y = 100;
-    auto x = (double)rand() / RAND_MAX * 900;
-    auto v = 300;
-    Physics::Bullet* PBullet = new Physics::Bullet(*PhysServer, x, y, v);
-    Graphics::Bullet* GBullet = new Graphics::Bullet(*GraphServer);
-    auto LBullet = Logic::Bullet(*LogServer, PBullet, GBullet);
+    if (GraphServer->IsPressed(Input::Button::P_C))
+    {
+        auto y = 100;
+        auto x = (double)rand() / RAND_MAX * 900;
+        auto v = 300;
+        Physics::Bullet* PBullet = new Physics::Bullet(*PhysServer, x, y, v);
+        Graphics::Bullet* GBullet = new Graphics::Bullet(*GraphServer);
+        auto LBullet = new Logic::Bullet(*LogServer, PBullet, GBullet);
+    }
 }

@@ -19,7 +19,7 @@ namespace Graphics
     {
     public:
         Entity(graphServer& Server);
-        ~Entity();
+        virtual ~Entity();
         virtual void OnFrame(float dt) = 0;
     protected: 
         graphServer& m_server;
@@ -44,7 +44,6 @@ namespace Graphics
         std::size_t GetHeight() const { return Height; }
     private:
         void CreateContext();
-        void UpdateButtons();
 
         std::unique_ptr<sf::RenderWindow> m_window;
         std::unique_ptr<sf::Font> m_font;

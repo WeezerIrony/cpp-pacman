@@ -9,7 +9,7 @@ namespace Logic
     {
     public:
         Entity(logServer& Server);
-        ~Entity();
+        virtual ~Entity();
         virtual void OnFrame(float dt) = 0;
     protected: 
         logServer& m_server;

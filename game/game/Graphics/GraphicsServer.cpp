@@ -55,10 +55,10 @@ namespace Graphics
         m_bulletTexture->loadFromFile("../Resources/bullet.png");
     }
 
-    void graphServer::UpdateButtons()
+    /*void graphServer::UpdateButtons()
     {
-        m_buttons[unsigned(Input::Button::P_C)] = sf::Keyboard::isKeyPressed(sf::Keyboard::C);
-    }
+         m_buttons[unsigned(Input::Button::P_C)] = sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
+    }*/
 
     void graphServer::BeforeRender()
     {
@@ -70,16 +70,20 @@ namespace Graphics
     {
         m_window->display();
 
-        sf::Event event{};
-
         auto&& start = std::chrono::high_resolution_clock::now();
         std::size_t elapsedTime{ 0 };
         while (elapsedTime < activeTime)
         {
+            sf::Event event{};
             if (m_window->pollEvent(event))
             {
                 if (event.type == sf::Event::EventType::KeyPressed)
-                    UpdateButtons();
+                {
+                    if (event.key.code == sf::Keyboard::C)
+                    {
+                        m_buttons[unsigned(Input::Button::P_C)] = true;
+                    }
+                }
             }
 
             auto&& end = std::chrono::high_resolution_clock::now();
