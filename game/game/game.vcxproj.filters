@@ -27,6 +27,9 @@
     <Filter Include="Core">
       <UniqueIdentifier>{924e00d9-b275-424b-90b6-7ed5c7b79702}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core\Commands">
+      <UniqueIdentifier>{e9d662e1-c516-441a-8cf7-7d53738ab4e3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics\GraphicsServer.h">
@@ -71,6 +74,12 @@
     <ClInclude Include="Graphics\GraphicsBullet.h">
       <Filter>Graphics</Filter>
     </ClInclude>
+    <ClInclude Include="Core\Commands\Command.h">
+      <Filter>Core\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Commands\CreateBullet.h">
+      <Filter>Core\Commands</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\ApplicationBuilder.cpp">
@@ -102,6 +111,9 @@
     </ClCompile>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Commands\CreateBullet.cpp">
+      <Filter>Core\Commands</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

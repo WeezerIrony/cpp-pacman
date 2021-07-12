@@ -155,6 +155,8 @@
     <ClInclude Include="Audio\GameAudio.h" />
     <ClInclude Include="Core\Application.h" />
     <ClInclude Include="Core\ApplicationBuilder.h" />
+    <ClInclude Include="Core\Commands\Command.h" />
+    <ClInclude Include="Core\Commands\CreateBullet.h" />
     <ClInclude Include="Core\MainServer.h" />
     <ClInclude Include="Graphics\GraphicsBullet.h" />
     <ClInclude Include="Graphics\GraphicsServer.h" />
@@ -169,6 +171,7 @@
   <ItemGroup>
     <ClCompile Include="Core\Application.cpp" />
     <ClCompile Include="Core\ApplicationBuilder.cpp" />
+    <ClCompile Include="Core\Commands\CreateBullet.cpp" />
     <ClCompile Include="Graphics\GraphicsBullet.cpp" />
     <ClCompile Include="Graphics\GraphicsServer.cpp" />
     <ClCompile Include="Logic\LogicBullet.cpp" />

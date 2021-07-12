@@ -3,8 +3,6 @@
 #include "Graphics/GraphicsServer.h"
 #include "Logic/LogicServer.h"
 
-
-
 class Application final
 {
 public:

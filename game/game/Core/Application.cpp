@@ -1,7 +1,5 @@
 #include "Application.h"
-#include "Physics/PhysicsBullet.h"
-#include "Logic/LogicBullet.h"
-#include "Graphics/GraphicsBullet.h"
+#include "Commands/CreateBullet.h"
 #include <chrono>
 
 namespace
@@ -55,11 +53,7 @@ void Application::HandleEvents() const
 {
     if (GraphServer->IsPressed(Input::Button::P_C))
     {
-        auto y = 100;
-        auto x = (double)rand() / RAND_MAX * 900;
-        auto v = 300;
-        Physics::Bullet* PBullet = new Physics::Bullet(*PhysServer, x, y, v);
-        Graphics::Bullet* GBullet = new Graphics::Bullet(*GraphServer);
-        auto LBullet = new Logic::Bullet(*LogServer, PBullet, GBullet);
+        CreateBullet creation(PhysServer, LogServer, GraphServer);
+        creation.Execute();
     }
 }
