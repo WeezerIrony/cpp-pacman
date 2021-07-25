@@ -21,9 +21,9 @@ namespace Physics
         {
             return isExploded;
         }
-        std::vector<float> GetCoords() 
+        Core::vector3& GetCoords() 
         {
-            return { bulletPosition.x, bulletPosition.y, bulletPosition.z };
+            return bulletPosition;
         }
         const std::vector<Splinter>& GetSplinters() const 
         {

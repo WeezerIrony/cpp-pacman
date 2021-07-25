@@ -1,5 +1,6 @@
 #pragma once
 #include "../core/mainserver.h"
+#include "GraphicsEntity.h"
 #include "Input/IServer.h"
 #include <memory>
 #include <array>
@@ -14,17 +15,6 @@ namespace sf
 
 namespace Graphics
 {
-    class graphServer;
-    class Entity
-    {
-    public:
-        Entity(graphServer& Server);
-        virtual ~Entity();
-        virtual void OnFrame(float dt) = 0;
-    protected: 
-        graphServer& m_server;
-    };
-
     class graphServer final : public Core::Server<Entity>
     {
     public:

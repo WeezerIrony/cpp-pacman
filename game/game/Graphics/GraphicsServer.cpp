@@ -6,16 +6,6 @@
 
 namespace Graphics
 {
-    Entity::Entity(graphServer& Server): m_server(Server)
-    {
-        m_server.registerEntity(this);
-    }
-
-    Entity::~Entity()
-    {
-        m_server.unregisterEntity(this);
-    }
-
     graphServer::graphServer(Input::IServer* input)
     {
         m_input = input;

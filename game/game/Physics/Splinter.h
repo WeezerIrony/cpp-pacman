@@ -4,17 +4,19 @@ namespace Physics
 {
     class Splinter {
     public:
-        Splinter(float x, float y, float z, float vX, float vY, float vZ, const Box& wBox) : splinterPosition{ x,y,z }, splinterVelocity{ vX,vY,vZ }, splinterBox(wBox)
+        Splinter(const Core::vector3& position, const Core::vector3& velocity, const Box& wBox) : splinterPosition(position), splinterVelocity(velocity), splinterBox(wBox)
         {
         }
         void Simulate(float dt);
+        void InAir(float dt);
+        void OnGround();
         bool SplinterOnGround() const
         { 
             return splinterPosition.y <= splinterBox.y0;
         }
-        std::vector<float> GetCoords() const
+        Core::vector3 GetCoords() const
         {
-            return { splinterPosition.x, splinterPosition.y, splinterPosition.z };
+            return splinterPosition;
         }
     private:
         Core::vector3 splinterPosition;

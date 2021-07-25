@@ -1,4 +1,5 @@
 #pragma once
+#include "PhysicsEntity.h"
 #include "../core/mainserver.h"
 
 struct Box {
@@ -12,16 +13,6 @@ struct Box {
 
 namespace Physics
 {
-    class physServer;
-    class Entity
-    {
-    public:
-        Entity(physServer& Server);
-        virtual ~Entity();
-        virtual void OnFrame(float dt) = 0;
-    protected: physServer& m_server;
-    };
-
     class physServer : public Core::Server<Entity>
     {
     public:

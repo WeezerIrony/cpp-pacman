@@ -48,12 +48,13 @@ namespace Physics
 		for (int i{ 0 }; i < SplintersCount; i++)
 		{
 			std::uniform_int_distribution<> distr1(-bulletVY, bulletVY);
-			auto spVX = distr1(gen);
+			float spVX = distr1(gen);
 			std::uniform_int_distribution<> distr2(-sqrt(pow(bulletVY, 2) - pow(spVX, 2)), sqrt(pow(bulletVY, 2) - pow(spVX, 2)));
-			auto spVY = distr2(gen);
+			float spVY = distr2(gen);
 			std::uniform_int_distribution<> distr3(-sqrt(pow(bulletVY, 2) - pow(spVX, 2) - pow(spVY, 2)), sqrt(pow(bulletVY, 2) - pow(spVX, 2) - pow(spVY, 2)));
-			auto spVZ = distr3(gen);
-			splinters.emplace_back(bulletPosition.x, bulletPosition.y, bulletPosition.z, spVX, spVY, spVZ, m_server.getWorldBox());
+			float spVZ = distr3(gen);
+			const Core::vector3& velocity{ spVX, spVY, spVZ };
+			splinters.emplace_back(bulletPosition, velocity, m_server.getWorldBox());
 		}
 		isExploded = true;
 	}

@@ -83,6 +83,15 @@
     <ClInclude Include="Core\Math.h">
       <Filter>Core</Filter>
     </ClInclude>
+    <ClInclude Include="Graphics\GraphicsEntity.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\PhysicsEntity.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\LogicEntity.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\ApplicationBuilder.cpp">
@@ -120,6 +129,15 @@
     </ClCompile>
     <ClCompile Include="Input\InputServer.cpp">
       <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GraphicsEntity.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\PhysicsEntity.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\LogicEntity.cpp">
+      <Filter>Logic</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
