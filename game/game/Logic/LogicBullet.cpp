@@ -22,14 +22,14 @@ namespace Logic
 		gbullet->setRenderType(!pbullet->GetExplode());
 		if (!pbullet->GetExplode())
 		{
-			gbullet->setRocketPosition(pbullet->GetCoords().first, pbullet->GetCoords().second);
+			gbullet->setRocketPosition(pbullet->GetCoords()[0], pbullet->GetCoords()[1]);
 		}
 		else
 		{
 			int index{ 0 };
 			for (auto &&splinter : pbullet->GetSplinters())
 			{
-				gbullet->setSplinterPosition(index, splinter.GetCoords().first, splinter.GetCoords().second);
+				gbullet->setSplinterPosition(index, splinter.GetCoords()[0], splinter.GetCoords()[1]);
 				index++;
 			}
 		}

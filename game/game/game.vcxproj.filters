@@ -80,6 +80,9 @@
     <ClInclude Include="Input\InputServer.h">
       <Filter>Input</Filter>
     </ClInclude>
+    <ClInclude Include="Core\Math.h">
+      <Filter>Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\ApplicationBuilder.cpp">

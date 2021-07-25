@@ -8,7 +8,7 @@ namespace Physics
     class Bullet : public Entity
     {
     public:
-        Bullet(physServer& Server, float bX, float bY, float bVY) : Entity(Server), bulletX(bX), bulletY(bY), bulletVY(bVY)
+        Bullet(physServer& Server, float bX, float bY, float bVY) : Entity(Server), bulletPosition{ bX, bY }, bulletVY(bVY)
         {
         }
         ~Bullet();
@@ -21,9 +21,9 @@ namespace Physics
         {
             return isExploded;
         }
-        std::pair<float, float> GetCoords() 
+        std::vector<float> GetCoords() 
         {
-            return { bulletX, bulletY };
+            return { bulletPosition.x, bulletPosition.y, bulletPosition.z };
         }
         const std::vector<Splinter>& GetSplinters() const 
         {
@@ -35,8 +35,7 @@ namespace Physics
         void ProcessSplinter(float dt);
         bool SplintersOnGround{ false };
         void Explode();
-        float bulletX{ 0 };
-        float bulletY{ 0 };
+        Core::vector3 bulletPosition;
         float bulletVY{ 0 };
         bool isExploded{ false };
     };

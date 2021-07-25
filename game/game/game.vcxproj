@@ -158,6 +158,7 @@
     <ClInclude Include="Core\Commands\Command.h" />
     <ClInclude Include="Core\Commands\CreateBullet.h" />
     <ClInclude Include="Core\MainServer.h" />
+    <ClInclude Include="Core\Math.h" />
     <ClInclude Include="Graphics\GraphicsBullet.h" />
     <ClInclude Include="Graphics\GraphicsServer.h" />
     <ClInclude Include="Input\InputServer.h" />

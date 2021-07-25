@@ -4,3 +4,4 @@
 /game/Debug
 /game/game/Logic/GameLogic.h
 /game/game/Graphics/SfmlGraphics.h
+/game/game/Input/SfmlInput.h
