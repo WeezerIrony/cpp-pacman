@@ -8,4 +8,10 @@ namespace Core
 		float y{ 0.f };
 		float z{ 0.f };
 	};
+
+	struct point
+	{
+		unsigned int x;
+		unsigned int y;
+	};
 }

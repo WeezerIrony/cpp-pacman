@@ -30,6 +30,12 @@
     <Filter Include="Core\Commands">
       <UniqueIdentifier>{e9d662e1-c516-441a-8cf7-7d53738ab4e3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Logic\Firework">
+      <UniqueIdentifier>{ec9ea22c-5fa7-438e-a1d5-908c4e16e6cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Pacman">
+      <UniqueIdentifier>{271caa5f-83aa-48d1-8e13-a5572c734048}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics\GraphicsServer.h">
@@ -92,6 +98,18 @@
     <ClInclude Include="Logic\LogicEntity.h">
       <Filter>Logic</Filter>
     </ClInclude>
+    <ClInclude Include="Logic\firework\LogicBullet.h">
+      <Filter>Logic\Firework</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\pacman\Cell.h">
+      <Filter>Logic\Pacman</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\pacman\Terrain.h">
+      <Filter>Logic\Pacman</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\pacman\TerrainEntity.h">
+      <Filter>Logic\Pacman</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\ApplicationBuilder.cpp">
@@ -138,6 +156,18 @@
     </ClCompile>
     <ClCompile Include="Logic\LogicEntity.cpp">
       <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\firework\LogicBullet.cpp">
+      <Filter>Logic\Firework</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\pacman\Cell.cpp">
+      <Filter>Logic\Pacman</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\pacman\Terrain.cpp">
+      <Filter>Logic\Pacman</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\pacman\TerrainEntity.cpp">
+      <Filter>Logic\Pacman</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -30,6 +30,15 @@ namespace Core
                 entities.erase(it);
             }
         }
+        template <typename RequestedEntity>
+        RequestedEntity* getEntity()
+        {
+            for (auto* e : entities)
+            {
+                if (auto* f = dynamic_cast<RequestedEntity*>(e))
+                    return e;
+            }
+        }
         virtual ~Server() = default;
     protected:
         virtual void onFrameImpl(float dt)
