@@ -71,9 +71,6 @@
     <ClInclude Include="Physics\Splinter.h">
       <Filter>Physics</Filter>
     </ClInclude>
-    <ClInclude Include="Logic\LogicBullet.h">
-      <Filter>Logic</Filter>
-    </ClInclude>
     <ClInclude Include="Graphics\GraphicsBullet.h">
       <Filter>Graphics</Filter>
     </ClInclude>
@@ -110,6 +107,9 @@
     <ClInclude Include="Logic\pacman\TerrainEntity.h">
       <Filter>Logic\Pacman</Filter>
     </ClInclude>
+    <ClInclude Include="Logic\pacman\MapLoader.h">
+      <Filter>Logic\Pacman</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\ApplicationBuilder.cpp">
@@ -123,9 +123,6 @@
     </ClCompile>
     <ClCompile Include="Physics\Splinter.cpp">
       <Filter>Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="Logic\LogicBullet.cpp">
-      <Filter>Logic</Filter>
     </ClCompile>
     <ClCompile Include="Logic\LogicServer.cpp">
       <Filter>Logic</Filter>
@@ -157,9 +154,6 @@
     <ClCompile Include="Logic\LogicEntity.cpp">
       <Filter>Logic</Filter>
     </ClCompile>
-    <ClCompile Include="Logic\firework\LogicBullet.cpp">
-      <Filter>Logic\Firework</Filter>
-    </ClCompile>
     <ClCompile Include="Logic\pacman\Cell.cpp">
       <Filter>Logic\Pacman</Filter>
     </ClCompile>
@@ -168,6 +162,12 @@
     </ClCompile>
     <ClCompile Include="Logic\pacman\TerrainEntity.cpp">
       <Filter>Logic\Pacman</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\pacman\MapLoader.cpp">
+      <Filter>Logic\Pacman</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\firework\LogicBullet.cpp">
+      <Filter>Logic\Firework</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

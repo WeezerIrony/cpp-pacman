@@ -1,7 +1,7 @@
 #pragma once
 #include "Command.h"
 #include "Physics/PhysicsBullet.h"
-#include "Logic/LogicBullet.h"
+#include "Logic/Firework/LogicBullet.h"
 #include "Graphics/GraphicsBullet.h"
 #include "Input/InputServer.h"
 

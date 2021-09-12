@@ -165,10 +165,10 @@
     <ClInclude Include="Input\InputServer.h" />
     <ClInclude Include="Input\IServer.h" />
     <ClInclude Include="Logic\firework\LogicBullet.h" />
-    <ClInclude Include="Logic\LogicBullet.h" />
     <ClInclude Include="Logic\LogicEntity.h" />
     <ClInclude Include="Logic\LogicServer.h" />
     <ClInclude Include="Logic\pacman\Cell.h" />
+    <ClInclude Include="Logic\pacman\MapLoader.h" />
     <ClInclude Include="Logic\pacman\Terrain.h" />
     <ClInclude Include="Logic\pacman\TerrainEntity.h" />
     <ClInclude Include="Physics\PhysicsBullet.h" />
@@ -185,10 +185,10 @@
     <ClCompile Include="Graphics\GraphicsServer.cpp" />
     <ClCompile Include="Input\InputServer.cpp" />
     <ClCompile Include="Logic\firework\LogicBullet.cpp" />
-    <ClCompile Include="Logic\LogicBullet.cpp" />
     <ClCompile Include="Logic\LogicEntity.cpp" />
     <ClCompile Include="Logic\LogicServer.cpp" />
     <ClCompile Include="Logic\pacman\Cell.cpp" />
+    <ClCompile Include="Logic\pacman\MapLoader.cpp" />
     <ClCompile Include="Logic\pacman\Terrain.cpp" />
     <ClCompile Include="Logic\pacman\TerrainEntity.cpp" />
     <ClCompile Include="Physics\PhysicsBullet.cpp" />
