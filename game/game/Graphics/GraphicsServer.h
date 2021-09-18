@@ -27,6 +27,9 @@ namespace Graphics
         void Close();
 
         sf::RenderWindow& RenderWindow() const { return *m_window; }
+        sf::Texture& WallTexture() const { return *m_wallTexture; }
+        sf::Texture& OrbTexture() const { return *m_orbTexture; }
+        sf::Texture& AlphaTexture() const { return *m_alphaTexture; }
         sf::Texture& BulletTexture() const { return *m_bulletTexture; }
 
         std::size_t GetHeight() const { return Height; }
@@ -37,6 +40,9 @@ namespace Graphics
         std::unique_ptr<sf::RenderWindow> m_window;
         std::unique_ptr<sf::Font> m_font;
         std::unique_ptr<sf::Texture> m_bulletTexture;
+        std::unique_ptr<sf::Texture> m_wallTexture;
+        std::unique_ptr<sf::Texture> m_orbTexture;
+        std::unique_ptr<sf::Texture> m_alphaTexture;
 
         std::size_t m_particles;
 
